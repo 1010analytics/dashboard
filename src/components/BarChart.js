@@ -10,18 +10,17 @@ import {
   Legend,
 } from 'chart.js';
 
-// Register the components you need
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const BarChart = ({ data }) => {
+const BarChart = ({ data, color }) => {
   const chartData = {
     labels: data.labels,
     datasets: [
       {
-        label: 'Gross Volume',
+        label: data.label,
         data: data.values,
-        backgroundColor: 'rgba(54, 162, 235, 0.6)',
-        borderColor: 'rgba(54, 162, 235, 1)',
+        backgroundColor: color || 'rgba(54, 162, 235, 0.6)',
+        borderColor: color ? color.replace('0.6', '1') : 'rgba(54, 162, 235, 1)',
         borderWidth: 1,
       },
     ],

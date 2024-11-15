@@ -1,4 +1,6 @@
 
+
+
 // src/components/Dashboard.js
 import React, { useEffect, useState } from 'react';
 import BarChart from './BarChart';
@@ -26,6 +28,13 @@ const Dashboard = () => {
     });
   }, []);
 
+  const applicationsData = {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+    applications: [120, 130, 140, 150, 160],
+    shortlisted: [70, 75, 80, 85, 90],
+    rejected: [30, 25, 20, 15, 10],
+  };
+
   return (
     <div className="dashboard">
       {/* Summary Section */}
@@ -41,6 +50,14 @@ const Dashboard = () => {
         <div className="summary-box">
           <h4>Total Customers</h4>
           <p>{summaryData.totalCustomers}k</p>
+        </div>
+        <div className="summary-box">
+          <h4>Total Customers</h4>
+          <p>{summaryData.totalCustomers}k</p>
+        </div>
+        <div className="summary-box">
+          <h4>Total Revenue</h4>
+          <p>${summaryData.totalRevenue.toLocaleString()}</p>
         </div>
       </div>
 
@@ -63,7 +80,7 @@ const Dashboard = () => {
 
         <div className="chart">
           <h3>Total Applications</h3>
-          <LineChart data={{ labels: ['Applications', 'Shortlisted', 'On-Hold', 'Rejected'], values: [120, 80, 40, 30] }} />
+          <LineChart data={applicationsData} />
         </div>
 
         <div className="chart">

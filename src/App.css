@@ -3,11 +3,20 @@
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 30px;
-  background-color: #121212; /* Dark background */
+  background-color: #d5f1ed; /* Dark background */
   color: #fff; /* White text for contrast */
   min-height: 100vh; /* Full height */
 }
 
+.Heading1{
+  font-size: 48px;
+  font-weight: 500;
+  color: #258BCB;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: underline;
+
+}
 .dashboard {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +71,62 @@
   transition: all 0.3s ease;
   width: 200px;
 }
+
+.summary-box1 {
+  background-color: #164e06; /* Dark gray for summary boxes */
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  width: 200px;
+}
+.summary-box2 {
+  background-color: #145d88; /* Dark gray for summary boxes */
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  width: 200px;
+}
+.summary-box3 {
+  background-color: #e70d0d; /* Dark gray for summary boxes */
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  width: 200px;
+}
+.summary-box4 {
+  background-color: #dbd114; /* Dark gray for summary boxes */
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  width: 200px;
+}
+
+
+
 
 .summary-box:hover {
   transform: translateY(-5px); /* Hover effect */

@@ -1,4 +1,4 @@
-# Conference Event
+# Employee Dashboard
 
 ![image](https://github.com/user-attachments/assets/3de75248-7f92-4d38-980a-5e62ed29f743)
 
